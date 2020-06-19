@@ -3,7 +3,9 @@
 
 import random
 
-for i in range(0,10):
+countCorrect = 0
+numberOfQuestions = 10
+for i in range(0,numberOfQuestions):
 
     x = random.randint(1,10) #randomly picks an integer between 1-10 inclusively and assigns to x
     y = random.randint(1,10) #randomly picks an integer between 1-10 inclusively and assigns to y
@@ -25,10 +27,10 @@ for i in range(0,10):
     userInput = int(input())
 
     if userInput == z:
+        countCorrect += 1
         print ('Correct') #How do I loop around a problem until the user types in the correct answer?
         #I assume we will need to assign the problem to a variable.
     else:
         print ('Better luck next time.')
     print()
-
-#How can I count how many correct?
+print (f'You finished it. Correct: {countCorrect} | Wrong: {numberOfQuestions - countCorrect}')
