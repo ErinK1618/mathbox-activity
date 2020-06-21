@@ -17,9 +17,10 @@ def printBox(box):
 print('Blank box.')
 printBox(valuesBox)
 
-print('Do you understand the box structure?')
+print('Do you understand the box structure? y/n')
 response = input()
-if response.lower == 'yes':
+response = response.lower
+if response == 'y': # why does this part not seem to work?
     print('Great! Let\'s continue.')
 else:
     print('Too bad. We\'re continuing anyhow.')
