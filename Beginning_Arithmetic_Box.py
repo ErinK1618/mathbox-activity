@@ -62,7 +62,7 @@ printBox(valuesBox)
 
 # def pickValues(): Want to use definitions to simplify.
 
-if pickedValuesBox['a × c'] == str(a*c) and pickedValuesBox['b × c'] == str(b*c) and pickedValuesBox['a × d'] == str(a*d) and pickedValuesBox['b × d'] == str(b*d):
+if valuesBox['a × c'] == str(a*c) and valuesBox['b × c'] == str(b*c) and valuesBox['a × d'] == str(a*d) and valuesBox['b × d'] == str(b*d):
     print('You got it right!')
 else :
     print('Better luck next time.')
