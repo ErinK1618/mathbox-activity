@@ -33,4 +33,12 @@ for i in range(0,numberOfQuestions):
     else:
         print ('Better luck next time.')
     print()
-print (f'You finished it. Correct: {countCorrect} | Wrong: {numberOfQuestions - countCorrect}')
+
+print('You\'ve finished!')
+if countCorrect == numberOfQuestions:
+    print('Wow! You got them all right')
+elif countCorrect >= 8 :
+    print(f'Good job! You got {countCorrect} out of {numberOfQuestions} right.')
+    # I believe the f is for a string that contains functions. Markus used it so I need to check with him.
+else :
+    print (f'You got {countCorrect} out of {numberOfQuestions} right.')
